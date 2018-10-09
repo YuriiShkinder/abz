@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    background: #bfbfbf;
+}
+
+h1.company {
+    margin: 40px auto;
+    text-align: center;
+    display: block;
+    max-width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px #ff0b00;
+    padding: 5px;
+    user-select: none;
+}
+
+.departments {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+.departments__item {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #000;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 1s;
+    height: 50px;
+    background: #fff !important;
+}
+
+.departments__item img {
+    width: 100px;
+    display: block;
+}
+
+.departments__item_active {
+    position: absolute;
+    opacity: 1 !important;
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+    left: 5% !important;
+    top: 20px !important;
+    z-index: 100;
+    cursor: default !important;
+}
+.departments__item_disabled {
+    opacity: 0;
+    cursor: default;
+}
